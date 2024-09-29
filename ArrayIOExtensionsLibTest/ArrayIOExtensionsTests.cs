@@ -1,8 +1,4 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
-using System.IO;
-
-namespace ArrayIOExtensionsLib.Tests
+﻿namespace ArrayIOExtensionsLib.Tests
 {
     /// <summary>
     /// Contains unit tests for the <see cref="ArrayIOExtensions"/> class.
