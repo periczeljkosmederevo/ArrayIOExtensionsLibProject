@@ -42,3 +42,33 @@ public class Person
     public int? Age { get; set; }
     public bool? IsActive { get; set; }
 }
+
+## Cleanup
+Each test automatically deletes the test file (testArray.txt) after execution to ensure that no temporary files remain on the file system.
+
+## Requirements
+- .NET SDK 8.0
+- MSTest for running the unit tests
+
+## How to Run the Tests
+- Clone the repository containing the ArrayIOExtensionsLib project.
+- Build the solution using your preferred IDE (e.g., Visual Studio) or using the .NET CLI.
+
+Run the tests:
+- In Visual Studio: Use the built-in Test Explorer.
+- Using the .NET CLI: Run dotnet test from the command line in the test project directory.
+
+## Licence
+This project is licensed under the Creative Commons Zero (CC0) License. 
+To the extent possible under law, the author(s) have dedicated all copyright 
+and related rights to this software to the public domain worldwide.
+
+For more details, see the LICENSE.
+
+## Contributing
+Contributions are welcome! 
+Feel free to submit issues or pull requests to help improve the project.
+
+## Contact
+For any questions or issues, 
+feel free to reach out at periczeljkosmederevo@yahoo.com.
