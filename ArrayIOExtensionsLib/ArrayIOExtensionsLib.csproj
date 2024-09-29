@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <IncludeSymbols>True</IncludeSymbols>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>ArrayIOExtensionsLib</Title>
+    <Authors>Perić Željko, periczeljkosmederevo@yahoo.com</Authors>
+    <Description>ArrayIOExtensionsLib is a .NET library that provides extension methods for saving and loading single or multi-dimensional arrays of simple types (such as strings and primitives) to and from text files.</Description>
+    <Copyright>Perić Željko, periczeljkosmederevo@yahoo.com</Copyright>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
