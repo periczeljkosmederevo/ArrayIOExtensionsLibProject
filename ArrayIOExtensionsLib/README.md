@@ -20,7 +20,7 @@
 
 To use this library in your project:
 
-1. **Download or clone** the project.
+1. **Download or clone** the project. (https://github.com/periczeljkosmederevo/ArrayIOExtensionsLibProject.git)
 2. **Build** the project to generate the `.dll` file.
 3. **Reference** the generated `.dll` in your own project:
    - **In Visual Studio**: Right-click your project > *Add* > *Reference* > *Browse* to select the generated `.dll`.

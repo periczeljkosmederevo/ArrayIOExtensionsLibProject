@@ -1,38 +1,50 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net8.0-windows</TargetFramework>
+  <PropertyGroup>    
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>disable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <UseWindowsForms>true</UseWindowsForms>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <IncludeSymbols>True</IncludeSymbols>
-    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <OutputType>Library</OutputType>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+
+    <AssemblyTitle>ArrayIOExtensionsLib</AssemblyTitle>
+    <Product>ArrayIOExtensionsLib</Product>
+
+    <!-- Package Information -->
     <Title>ArrayIOExtensionsLib</Title>
     <Authors>Perić Željko, periczeljkosmederevo@yahoo.com</Authors>
-    <Description>ArrayIOExtensionsLib is a .NET library that provides extension methods for saving and loading single or multi-dimensional arrays of simple types (such as strings and primitives) to and from text files. This library is designed to work with structured data, handling null values and supporting easy serialization and deserialization.</Description>
-    <Copyright>Perić Željko, periczeljkosmederevo@yahoo.com</Copyright>
+    <Description>ArrayIOExtensionsLib is a .NET library that provides extension methods for saving and loading single or multi-dimensional arrays to and from text files.
+IMPORTANT: Values in the array must be properly initialized before calling the save methods, especially when working with arrays of complex or custom types. If not properly initialized, null values in objects may lead to incorrect written values in the text file, as the object will not be serialized with all its properties.</Description>
     <PackageProjectUrl>https://github.com/periczeljkosmederevo/ArrayIOExtensionsLibProject</PackageProjectUrl>
+    <PackageIcon>TM 500.png</PackageIcon>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <RepositoryUrl>https://github.com/periczeljkosmederevo/ArrayIOExtensionsLibProject</RepositoryUrl>
-    <PackageTags>Array;Extensions;IO</PackageTags>
+    <PackageTags>Array; Extension; IO</PackageTags>
     <PackageReleaseNotes>Initial release</PackageReleaseNotes>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
-    <PackageIcon>TM 500.png</PackageIcon>
+    
+    <!-- Versioning -->
+    <AssemblyVersion>1.0.0.1</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
+    <Version>$(AssemblyVersion)</Version>
+
+    <!-- Symbol Package -->
+    <IncludeSymbols>True</IncludeSymbols>
+    <Copyright>Copyright ©  2024</Copyright>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="..\LICENSE.txt">
+    <None Update="LICENSE.txt">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
-    <None Include="..\README.md">
+    <None Update="README.md">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
-  </ItemGroup>
-
-  <ItemGroup>
     <None Update="TM 500.png">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>

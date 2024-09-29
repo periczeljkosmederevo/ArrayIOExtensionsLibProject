@@ -129,7 +129,7 @@ namespace ArrayIOExtensionsLib
                     // Serialize the value
                     SerializeObject(writer, value, elementType);
                 }
-                return; 
+                return;
                 // Exit early since we've already processed the entire array
             }
 
@@ -327,7 +327,7 @@ namespace ArrayIOExtensionsLib
                 var properties = obj.GetType().GetProperties();
                 foreach (var property in properties)
                 {
-                    var value = 
+                    var value =
                         property.GetValue(obj)?.ToString() ?? _nullRepresentation;
                     writer.WriteLine(value);
                 }
@@ -348,7 +348,7 @@ namespace ArrayIOExtensionsLib
         {
             if (lineIndex >= lines.Length)
             {
-                return null; 
+                return null;
                 // or throw an exception, based on your design choice
             }
 
