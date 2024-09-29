@@ -2,7 +2,7 @@
 
 ## Overview
 
-`ArrayIOExtensionsLib` is a .NET library that provides extension methods for saving and loading single or multi-dimensional arrays of simple types (such as strings and primitives) to and from text files. This library is designed to work with structured data, handling `null` values and supporting easy serialization and deserialization.
+`ArrayIOExtensionsLib` i a .NET library that provides extension methods for saving and loading single or multi-dimensional arrays of simple types (such as strings and primitives) to and from text files. This library is designed to work with structured data, handling `null` values and supporting easy serialization and deserialization.
 
 ## Key Features
 
