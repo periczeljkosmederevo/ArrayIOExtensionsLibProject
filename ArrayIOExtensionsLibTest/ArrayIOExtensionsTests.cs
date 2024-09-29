@@ -1,11 +1,31 @@
-﻿namespace ArrayIOExtensionsLib.Test
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
+using System.IO;
+
+namespace ArrayIOExtensionsLib.Tests
 {
+    /// <summary>
+    /// Contains unit tests for the <see cref="ArrayIOExtensions"/> class.
+    /// This class is responsible for testing the functionality of saving and
+    /// loading single or multi-dimensional arrays to and from text files. 
+    /// The tests validate that the data is correctly written to 
+    /// and read from the file, ensuring data integrity and correct handling 
+    /// of both string arrays and custom object arrays (<see cref="Person"/>). 
+    /// Each test method follows the Arrange-Act-Assert 
+    /// pattern for clear and organized test cases. 
+    /// Cleanup is performed after each 
+    /// test to maintain a consistent test environment.
+    /// </summary>
     [TestClass()]
     public class ArrayIOExtensionsTests
     {
         // Change to a temp path if needed
         private const string TestFilePath = "testArray.txt";
 
+        /// <summary>
+        /// Tests the SaveToTextFile method for saving a 2D array to a text file.
+        /// Verifies that the contents of the file match the expected values.
+        /// </summary>
         [TestMethod()]
         public void SaveToTextFileTest()
         {
@@ -43,6 +63,10 @@
                 "The file contents do not match the expected values.");
         }
 
+        /// <summary>
+        /// Tests the LoadFromTextFile method for loading a 2D array from a text file.
+        /// Compares the loaded array with the original array to ensure they match.
+        /// </summary>
         [TestMethod()]
         public void LoadFromTextFileTest()
         {
@@ -74,6 +98,10 @@
             }
         }
 
+        /// <summary>
+        /// Tests saving and loading a 2D array of Person objects to and from a text file.
+        /// Verifies that the loaded Person objects match the original objects in all properties.
+        /// </summary>
         [TestMethod()]
         public void SaveAndLoadPersonArrayTest()
         {
@@ -88,11 +116,10 @@
                 }
             };
 
-
             // Act
             people.SaveToTextFile(TestFilePath);
 
-            var loadedPeople = new Person[2,2];
+            var loadedPeople = new Person[2, 2];
             loadedPeople.LoadFromTextFile(TestFilePath);
 
             // Assert
@@ -110,6 +137,11 @@
             }
         }
 
+        /// <summary>
+        /// Tests saving an empty array of Person objects to a text file.
+        /// Verifies that the saved data contains the expected number of properties 
+        /// with their default values.
+        /// </summary>
         [TestMethod()]
         public void SaveEmptyArrayOfPersonsTest()
         {
@@ -132,7 +164,6 @@
                 expectedTotalValues,
                 savedData.Length,
                 "The number of saved values should match the expected total.");
-
 
             // Check if all saved values are the correct
             // default representation for each property
@@ -161,6 +192,10 @@
             }
         }
 
+        /// <summary>
+        /// Tests saving and loading an empty array of Person objects to and from a text file.
+        /// Verifies that the loaded Person objects are not null and have default values for their properties.
+        /// </summary>
         [TestMethod()]
         public void SaveAndLoadEmptyPersonArrayTest()
         {
@@ -209,7 +244,9 @@
             }
         }
 
-
+        /// <summary>
+        /// Cleans up after each test by deleting the test file if it exists.
+        /// </summary>
         [TestCleanup()]
         public void Cleanup()
         {
@@ -220,6 +257,9 @@
             }
         }
 
+        /// <summary>
+        /// Represents a person with a name, age, and active status.
+        /// </summary>
         public class Person
         {
             public string? Name { get; set; }
