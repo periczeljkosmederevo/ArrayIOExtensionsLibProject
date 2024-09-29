@@ -42,7 +42,7 @@ public class Person
     public int? Age { get; set; }
     public bool? IsActive { get; set; }
 }
-
+```
 ## Cleanup
 Each test automatically deletes the test file (testArray.txt) after execution to ensure that no temporary files remain on the file system.
 
@@ -52,6 +52,7 @@ Each test automatically deletes the test file (testArray.txt) after execution to
 
 ## How to Run the Tests
 - Clone the repository containing the ArrayIOExtensionsLib project.
+- https://github.com/periczeljkosmederevo/ArrayIOExtensionsLibProject
 - Build the solution using your preferred IDE (e.g., Visual Studio) or using the .NET CLI.
 
 Run the tests:
