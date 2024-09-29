@@ -10,12 +10,30 @@
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Title>ArrayIOExtensionsLib</Title>
     <Authors>Perić Željko, periczeljkosmederevo@yahoo.com</Authors>
-    <Description>ArrayIOExtensionsLib is a .NET library that provides extension methods for saving and loading single or multi-dimensional arrays of simple types (such as strings and primitives) to and from text files.</Description>
+    <Description>ArrayIOExtensionsLib is a .NET library that provides extension methods for saving and loading single or multi-dimensional arrays of simple types (such as strings and primitives) to and from text files. This library is designed to work with structured data, handling null values and supporting easy serialization and deserialization.</Description>
     <Copyright>Perić Željko, periczeljkosmederevo@yahoo.com</Copyright>
+    <PackageProjectUrl>https://github.com/periczeljkosmederevo/ArrayIOExtensionsLibProject</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/periczeljkosmederevo/ArrayIOExtensionsLibProject</RepositoryUrl>
+    <PackageTags>Array;Extensions;IO</PackageTags>
+    <PackageReleaseNotes>Initial release</PackageReleaseNotes>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <PackageIcon>TM 500.png</PackageIcon>
   </PropertyGroup>
 
   <ItemGroup>
     <None Include="..\LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="TM 500.png">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
