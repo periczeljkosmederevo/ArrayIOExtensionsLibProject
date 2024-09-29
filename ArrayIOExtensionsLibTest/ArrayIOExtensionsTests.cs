@@ -1,12 +1,10 @@
-﻿using ArrayIOExtensionsLib;
-
-namespace ArrayIOExtensionsLib.Test
+﻿namespace ArrayIOExtensionsLib.Test
 {
     [TestClass()]
     public class ArrayIOExtensionsTests
     {
         // Change to a temp path if needed
-        private const string TestFilePath = "testArray.txt"; 
+        private const string TestFilePath = "testArray.txt";
 
         [TestMethod()]
         public void SaveToTextFileTest()
@@ -69,8 +67,8 @@ namespace ArrayIOExtensionsLib.Test
                 for (int j = 0; j < originalArray.GetLength(1); j++)
                 {
                     Assert.AreEqual(
-                        originalArray[i, j], 
-                        loadedArray[i, j], 
+                        originalArray[i, j],
+                        loadedArray[i, j],
                         "Loaded value does not match original value.");
                 }
             }
@@ -131,8 +129,8 @@ namespace ArrayIOExtensionsLib.Test
 
             // Assert
             Assert.AreEqual(
-                expectedTotalValues, 
-                savedData.Length, 
+                expectedTotalValues,
+                savedData.Length,
                 "The number of saved values should match the expected total.");
 
 
@@ -150,12 +148,12 @@ namespace ArrayIOExtensionsLib.Test
                 for (int i = 0; i < emptyPeople.GetLength(0); i++)
                 {
                     // Calculate the correct index for saved data
-                    int index = (i * expectedNumberOfProperties) 
+                    int index = (i * expectedNumberOfProperties)
                                     + Array.IndexOf(typeof(Person).GetProperties(), property);
 
                     // Assert that the saved value matches the expected default value
                     Assert.AreEqual(
-                        expectedValue, 
+                        expectedValue,
                         savedData[index],
                             $"Property '{property.Name}' " +
                             $"should have a default value in the saved data.");
@@ -177,12 +175,12 @@ namespace ArrayIOExtensionsLib.Test
 
             // Assert
             Assert.AreEqual(
-                emptyPeople.GetLength(0), 
-                loadedData.GetLength(0), 
+                emptyPeople.GetLength(0),
+                loadedData.GetLength(0),
                 "The number of rows should match.");
             Assert.AreEqual(
-                emptyPeople.GetLength(1), 
-                loadedData.GetLength(1), 
+                emptyPeople.GetLength(1),
+                loadedData.GetLength(1),
                 "The number of columns should match.");
 
             // Check that all properties of
@@ -196,7 +194,7 @@ namespace ArrayIOExtensionsLib.Test
                     // Get the expected default value for the property type
                     object? expectedDefaultValue = property.PropertyType.IsValueType
                         // Get default for value types (e.g., int = 0, bool = false)
-                        ? Activator.CreateInstance(property.PropertyType) 
+                        ? Activator.CreateInstance(property.PropertyType)
                         : null; // Reference types default to null
 
                     // Get the actual value of the property from the person object
@@ -204,8 +202,8 @@ namespace ArrayIOExtensionsLib.Test
 
                     // Compare the actual value with the expected default value
                     Assert.AreEqual(
-                        expectedDefaultValue, 
-                        actualValue, 
+                        expectedDefaultValue,
+                        actualValue,
                         $"Property '{property.Name}' should have the default value.");
                 }
             }
