@@ -158,6 +158,4 @@ For any questions or issues,
 feel free to reach out at periczeljkosmederevo@yahoo.com.
 Feel free to submit issues or pull requests to help improve the project.
 
-## Contact
-For any questions or issues, 
-feel free to reach out at periczeljkosmederevo@yahoo.com.
+
