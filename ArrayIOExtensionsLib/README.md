@@ -70,11 +70,7 @@ customers.LoadFromTextFile("customers.txt");
 ```
 
 ## Licence
-This project is licensed under the Creative Commons Zero (CC0) License. 
-To the extent possible under law, the author(s) have dedicated all copyright 
-and related rights to this software to the public domain worldwide.
-
-For more details, see the LICENSE.
+This project is licensed under the [CC0-1.0 license (Public Domain)](LICENSE.txt). Feel free to use, modify, and distribute the code without any restrictions.
 
 ## Contributing
 Contributions are welcome! 
