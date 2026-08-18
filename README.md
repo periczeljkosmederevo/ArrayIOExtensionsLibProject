@@ -72,10 +72,10 @@ customers.LoadFromTextFile("customers.txt");
 ```
 
 ### License
-* This project is licensed under the [CC0-1.0 license (Public Domain)](LICENSE.txt).
+* This project is licensed under the [CC0-1.0 license (Public Domain)](LICENSE).
 * To the extent possible under law, the author(s) have dedicated all copyright and related rights to this software to the public domain worldwide.
 * Feel free to use, modify, and distribute the code without any restrictions.
-* For more details, see the [LICENSE](LICENSE.txt) file or view the full legal text at [Creative Commons CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/).
+* For more details, see the [LICENSE](LICENSE) file or view the full legal text at [Creative Commons CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/).
 
 ## Contributing
 Contributions are welcome! 
@@ -142,10 +142,10 @@ Run the tests:
 - Using the .NET CLI: Run dotnet test from the command line in the test project directory.
 
 ### License
-* This project is licensed under the [CC0-1.0 license (Public Domain)](LICENSE.txt).
+* This project is licensed under the [CC0-1.0 license (Public Domain)](LICENSE).
 * To the extent possible under law, the author(s) have dedicated all copyright and related rights to this software to the public domain worldwide.
 * Feel free to use, modify, and distribute the code without any restrictions.
-* For more details, see the [LICENSE](LICENSE.txt) file or view the full legal text at [Creative Commons CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/).
+* For more details, see the [LICENSE](LICENSE) file or view the full legal text at [Creative Commons CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/).
 
 ## Contributing
 Contributions are welcome! 
