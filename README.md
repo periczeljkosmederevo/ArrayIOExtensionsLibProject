@@ -143,10 +143,9 @@ Run the tests:
 - Using the .NET CLI: Run dotnet test from the command line in the test project directory.
 
 ## Licence
-This project is licensed under the Creative Commons Zero (CC0) License. 
+This project is licensed under the [CC0-1.0 license (Public Domain)](LICENSE.txt). 
 To the extent possible under law, the author(s) have dedicated all copyright 
 and related rights to this software to the public domain worldwide.
-
 For more details, see the LICENSE.
 
 ## Contributing
