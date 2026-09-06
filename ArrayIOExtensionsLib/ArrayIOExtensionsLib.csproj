@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>    
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>disable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <OutputType>Library</OutputType>
@@ -16,19 +16,29 @@
     <Title>ArrayIOExtensionsLib</Title>
     <Authors>Perić Željko, periczeljkosmederevo@yahoo.com</Authors>
     <Description>ArrayIOExtensionsLib is a .NET library that provides extension methods for saving and loading single or multi-dimensional arrays to and from text files.
-IMPORTANT: Values in the array must be properly initialized before calling the save methods, especially when working with arrays of complex or custom types. If not properly initialized, null values in objects may lead to incorrect written values in the text file, as the object will not be serialized with all its properties.</Description>
+IMPORTANT: Values in the array must be properly initialized before calling the save methods, especially when working with arrays of complex or custom types. If not properly initialized, null values in objects may lead to incorrect written values in the text file, as the object will not be serialized with all its properties.
+
+Major upgrade to .NET 10. 
+
+BREAKING CHANGE: 
+- This version targets .NET 10 and drops support for .NET 8. 
+- Projects consuming this package must update their target framework to .NET 10 before upgrading the package.</Description>
     <PackageProjectUrl>https://github.com/periczeljkosmederevo/ArrayIOExtensionsLibProject</PackageProjectUrl>
     <PackageIcon>TM 500.png</PackageIcon>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <RepositoryUrl>https://github.com/periczeljkosmederevo/ArrayIOExtensionsLibProject</RepositoryUrl>
     <PackageTags>Array; Extension; IO</PackageTags>
-    <PackageReleaseNotes>Initial release</PackageReleaseNotes>
+    <PackageReleaseNotes>Major upgrade to .NET 10. 
+
+BREAKING CHANGE: 
+- This version targets .NET 10 and drops support for .NET 8. 
+- Projects consuming this package must update their target framework to .NET 10 before upgrading the package.</PackageReleaseNotes>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
     
     <!-- Versioning -->
-    <AssemblyVersion>1.0.0.1</AssemblyVersion>
-    <FileVersion>1.0.0.0</FileVersion>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+    <FileVersion>10.0.0.0</FileVersion>
     <Version>$(AssemblyVersion)</Version>
 
     <!-- Symbol Package -->
